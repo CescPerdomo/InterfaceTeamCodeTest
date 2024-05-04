@@ -1,13 +1,12 @@
 
 /* Estilos para el banner */
-.banner {
+ .banner {
     height: 560px;
-    background-image: url('banner.jpg');
+    /*background-image: url('banner.jpg');
     background-size: cover;
     background-position: center;
     color: white;
-    text-align: center;
-    padding: 100px 0;
+    text-align: center;*/
 }
 
 .banner-content {

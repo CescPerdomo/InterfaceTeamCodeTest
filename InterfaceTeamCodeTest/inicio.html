@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Actividades</title>
+        <title>Los Cobanos</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -60,15 +60,127 @@
         <main>
             <!-- Banner de la página de inicio -->
     <section class="banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2 text-center">
-                    <h1>Descubre el Arrecife de los Cobanos</h1>
-                    <p>Sumérgete en la belleza natural de El Salvador</p>
-                    <a href="#" class="btn btn-primary">Explora ahora</a>
+      <section class="carousel-container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="Actividades.html"><img src="img/banner1.jpg" class="d-block w-100" alt="banner1"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="Actividades.html"><img src="img/banner2.png" class="d-block w-100" alt="banner2"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="Actividades.html"><img src="img/banner3.png" class="d-block w-100" alt="banner3"></a>
                 </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </button>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
         </div>
+        
+        <div class="mt-4 d-flex justify-content-center align-items-center">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reservationModal">Reservar</button>
+          </div>
+        <div class="modal fade" id="reservationModal" tabindex="-1" aria-labelledby="reservationModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <form>
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="reservationModalLabel">Reservar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- Agregar campos para llenado de formulario -->
+                    <div class="form-group">
+                        <label for="firstName" class="col-form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="firstName">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName" class="col-form-label">Apellido:</label>
+                        <input type="text" class="form-control" id="lastName">
+                    </div>
+                    <div class="form-group">
+                        <label for="Email" class="col-form-label">Email</label>
+                        <input type="text" class="form-control" id="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="roomType" class="col-form-label">Selecciona tu Actividad:</label>
+                        <select id="roomType" class="form-control">
+                            <option value="standard">Hotel</option>
+                            <option value="deluxe">Snorkeling</option>
+                            <option value="suite">Avistamiento</option>
+                            <option value="suite">Hotel</option>
+                            <option value="suite">Buceo</option>
+                            <option value="suite">Restaurante</option>
+                        </select>
+                    </div>
+                    <div class="form-group"></div>
+                        <label for="checkInDate" class="col-form-label">Fecha de ingreso:</label>
+                        <input type="date" class="form-control" id="checkInDate">
+                    </div>
+                    <div class="form-group">
+                        <label for="checkOutDate" class="col-form-label">Fecha de salida:</label>
+                        <input type="date" class="form-control" id="checkOutDate">
+                    </div>
+                    <div class="form-group">
+                        <label for="cardNumber" class="col-form-label">Número de Tarjeta:</label>
+                        <input type="text" class="form-control" id="cardNumber">
+                      </div>
+                      <div class="form-group">
+                        <label for="cardName" class="col-form-label">Nombre en la Tarjeta:</label>
+                        <input type="text" class="form-control" id="cardName">
+                      </div>
+                      <div class="form-group">
+                        <label for="expirationDate" class="col-form-label">Fecha de Expiración:</label>
+                        <input type="text" class="form-control" id="expirationDate">
+                      </div>
+                      <div class="form-group">
+                        <label for="cvv" class="col-form-label">CVV:</label>
+                        <input type="text" class="form-control" id="cvv">
+                      </div>
+                    <div class="form-group">
+                        <label for="paymentMethod" class="col-form-label">Método de pago:</label>
+                        <select id="paymentMethod" class="form-control">
+                            <option value="creditCard">Tarjeta de crédito</option>
+                            <option value="debitCard">Tarjeta de débito</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="Bitcoin">Bitcoin</option>
+                            <option value="Transfer">Transferencia</option>
+                        </select>
+                    </div></div>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#creditCardModal">Reservar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     </section>
 
     <!-- Información sobre el arrecife -->
