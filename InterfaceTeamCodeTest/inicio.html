@@ -39,7 +39,7 @@
         
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="Actiidades.html" id="navbarDropdown" role="button"
+                    <a class="nav-link dropdown-toggle" href="#activities" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Actividades
                     </a>
                 </li>
@@ -183,6 +183,49 @@
 </section>
     </section>
 
+    <div class="modal fade" id="creditCardModal" tabindex="-1" aria-labelledby="creditCardModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form>
+            <div class="modal-header">
+              <h5 class="modal-title" id="creditCardModalLabel">Reservar con Tarjeta de Crédito</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- Agregar campos para llenado de formulario -->
+              <div class="form-group">
+                <label for="cardNumber" class="col-form-label">Número de Tarjeta:</label>
+                <input type="text" class="form-control" id="cardNumber">
+              </div>
+              <div class="form-group">
+                <label for="cardName" class="col-form-label">Nombre en la Tarjeta:</label>
+                <input type="text" class="form-control" id="cardName">
+              </div>
+              <div class="form-group">
+                <label for="expirationDate" class="col-form-label">Fecha de Expiración:</label>
+                <input type="text" class="form-control" id="expirationDate">
+              </div>
+              <div class="form-group">
+                <label for="cvv" class="col-form-label">CVV:</label>
+                <input type="text" class="form-control" id="cvv">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="submit" class="btn btn-primary">Confirmar Reserva</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+        </section>   
+
     <!-- Información sobre el arrecife -->
     <section class="about">
         <div class="container">
@@ -193,46 +236,102 @@
     </section>
 
     <!-- Actividades -->
-    <section class="activities">
-        <div class="container">
-            <h2 class="text-center">Actividades</h2>
-            <div class="container">
-                <p>Hoteles y restaurantes en la playa los cobanos</p>
-                <div class="row">
-                  <div class="col-md-4 producto" id="beachvillasyresort">
-                    <img src="assets/img/beachvillasyresort.png" alt="Tv">
-                    <h3>Los Cobanos Beach Villas y Resort</h3>
-                    <p> Km 88,50 Carretera a Los Cóbanos, Sonsonate, El Salvador., Sonsonate, El Salvador 2420 5000  abierto las 24 Horas </p>
-                  </div>
-                  <div class="col-md-4 producto" id="Brisamarina">
-                    <img src="assets/img/Brisamarina.png" alt="Adaptador">
-                    <h3>Restaurante y Hotel Brisas Marinas</h3>
-                    <p> Hotel Brisa Marina residendencial salinitas 2 lote 21 y 22, Acajutla, El Salvador Tel 6842 8776</p>
-                  </div>
-                  <div class="col-md-4 producto" id="eldorado">
-                    <img src="Assets/img/eldorado.png" alt="Audio">
-                    <h3>El Ancla & El Dorado        </h3>
-                    <p>Como el Sol y la Luna, el Ancla y el Dorado te ofrecen energías distintas. Explóralas visitando nuestras beach residences en playa Los Cóbanos.</p>
-                  </div>
-                  <div class="col-md-4 producto" id="lasveraneras">
-                    <img src="assets/img/lasveraneras.png" alt="Audio">
-                    <h3>Las Veraneras</h3>
-                    <p>Las Veraneras, Km 88 1/2 Carretera Los Cobanos, Sonsonate, Acajutla, El Salvador Tel.2255 4457  
-                      Las Veraneras Villas & Resort Un destino impresionante ubicado en playa de Los Cobanos, Sonsonate
-                    </p>
-                  </div>
-                  <div class="col-md-4 producto" id="villagelodge">
-                    <img src="assets/img/villagelodge.png" alt="Cargador">
-                    <h3>Hotel Los Cobanos Village Lodge</h3>
-                    <p>Los Cobanos Village Lodge Hotel Playa Los Cobanos Comunidad Punta Remedios, El Salvador C.A. Acajutla 0 - Los Cóbanos - 01101 - Sonsonate - El Salvador</p>
-                  </div>
-                  <div class="col-md-4 producto" id="villagelodge">
-                    <img src="assets/img/acaxual.png" alt="Cargador">
-                    <h3>Acaxual</h3>
-                    <p>El malecón Acaxual es un lugar de sano esparcimiento tanto para los turistas que visitan Acajutla como para quienes viven en la zona, pues cuenta con vista al mar y un muelle industrial para los barcos provenientes de diversos destinos.</p>
-                  </div>
+    <section class="activities" id="activities">
+      <div class="container">
+        <h2 class="text-center">Destacados</h2>
+        <!-- Detalle de imagenes del arrecife -->
+        <div class="row">
+            <div class="col-md-4">
+            <div class="poster" onclick="showPosterDetails('Image 1')">
+                <img src="img/Avis.jpg" alt="Image 1" class="img-fluid">
+                <div class="poster-overlay">
+                <h3>Detalles</h3>
+                <p>Tour en Catamaran $75 X 2 horas </p>
+                <p>Avistamiento de Ballenas</p>
+                <p>Bebidas Ilimitadas</p>
+                <p>Parapente (opcional)</p>
+                <span class="stars">★★★★★</span>
                 </div>
-              </div>
+                <h4>Disponible</h4>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reservationModal">Agregalo a tu Reserva</button>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="poster" onclick="showPosterDetails('Image 2')">
+                <img src="img/royal.jpg" alt="Image 2" class="img-fluid">
+                <div class="poster-overlay">
+                <h3>Detalles</h3>
+                <p>Acceso Zona VIP</p>
+                <p>Aperitivos Gratis Cortesia del Hotel</p>
+                <p>Bebidas Ilimitadas</p>
+                <p>Servicio de Habitacion las 24 horas</p>
+                <span class="stars">★★★★★</span>
+                </div>
+                <h4>Disponible</h4>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reservationModal">Agregalo a tu Reserva</button>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="poster" onclick="showPosterDetails('Image 3')">
+                <img src="img/Snorkeling.jpg" alt="Image 3" class="img-fluid">
+                <div class="poster-overlay">
+                <h3>Detalles</h3>
+                <p>Snorkeling 2x1</p>
+                <p>Full Day</p>
+                <p>Clases de Surf</p>
+                <p>Liberacion de Tortugas</p>
+                <span class="stars">★★★★★</span>
+                </div>
+                <h4>Agotado</h4>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reservationModal">Reserva tu Cupo</button>
+            </div>
+            </div>
+            <div class="col-md-4">
+                <div class="poster" onclick="showPosterDetails('Image 3')">
+                    <img src="img/Restaurante.jpg" alt="Image 3" class="img-fluid">
+                    <div class="poster-overlay">
+                    <h3>Detalles</h3>
+                    <p>Todo Incluido</p>
+                    <p>Snorkeling Gratis los dias Jueves</p>
+                    <p>Clases de Surf</p>
+                    <p>Yoga</p>
+                    <span class="stars">★★★★★</span>
+                    </div>
+                    <h4>Agotado</h4>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reservationModal">Reserva tu Cupo</button>
+                </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="poster" onclick="showPosterDetails('Image 3')">
+                        <img src="img/Buceo_LosCobanos.jpg" alt="Image 3" class="img-fluid">
+                        <div class="poster-overlay">
+                        <h3>Detalles</h3>
+                        <p>Buceo en Acuario</p>
+                        <p>Uso de equipo Gratis</p>
+                        <p>Clases de Buceo Profesional</p>
+                        <p>Fotografia Acuatica</p>
+                        <span class="stars">★★★★★</span>
+                        </div>
+                        <h4>Disponible</h4>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reservationModal">Reserva tu Cupo</button>
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="poster" onclick="showPosterDetails('Image 3')">
+                            <img src="img/Arrecife_Cobanos.jpg" alt="Image 3" class="img-fluid">
+                            <div class="poster-overlay">
+                            <h3>Detalles</h3>
+                            <p>Vuelo en Avioneta</p>
+                            <p>30 minutos</p>
+                            <p>Selfie desde el Aire en HD</p>
+                            <p>Incluye Snacks durante el Vuelo</p>
+                            <span class="stars">★★★★★</span>
+                            </div>
+                            <h4>Cupo Limitado</h4>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reservationModal">Reserva tu Cupo</button>
+                        </div>
+                        </div>
+        </div>
         </div>
     </section>
 
