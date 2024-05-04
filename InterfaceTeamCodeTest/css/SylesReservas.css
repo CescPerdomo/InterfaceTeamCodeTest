@@ -1,0 +1,403 @@
+/* Estilos para el popup */
+#popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#popup img {
+  max-width: 100%;
+  max-height: 80%;
+}
+
+#popup button {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+
+/* Estilos para botones */
+
+.btn {
+  background-color: #2271b3;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+/* Estilos para la NavBar */
+
+#main-nav {
+  padding: 4px; /* Para incrementar tamaño de la navbar */
+  font-size: 1.1em; /* Incrementar tamaño de letra */
+  position: fixed; /* Alinear la navbar */
+  width: 100%; /* Alinear la navbar con la ventana del navegador */
+  top: 0; /* Posicion superior de la navbar  */
+  background-color: #333; /* Agregar color de fondo de la navbar */
+  z-index: 1000; /* Permitir agregar contenidos a la navbar */
+}
+
+
+.navbar-nav .nav-link {
+  font-size: 1.3em; /* Aumentar tamaño de letra */
+}
+
+.navbar-brand {
+  font-size: 1.7em; /* Aumentar tamaño de letra */
+}
+
+.navbar-nav {
+  margin-right: right; /* Mover los items a la derecha */
+}  
+
+.navbar-brand {
+  margin-right: auto;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.contenedor-relativo {
+position: relative;
+}
+
+.contenedor-iconos {
+display: flex;
+justify-content: flex-end;
+}
+#navbarNav {
+display: flex;
+justify-content: flex-end;
+}
+
+/* iconos de idioma */
+
+.iconos {
+margin-right: auto;
+}
+
+.icono-derecha {
+position: absolute;
+right: 5;
+}
+
+/* Estilos para el carousel */
+
+.carousel {
+background-color: #fff;
+margin-top: 75px; /* Agregar margenes hacia abajo */
+width: 100%; /* Incrementar tamaño del carousel */
+height: 600px; /* Incrementar altura  */
+}
+
+.carousel-item img {
+width: 600px; /* Agrandar imagenes dentro del carousel */
+height: 600px; /* Aumentar altura de imagenes */
+} 
+
+.carousel-container {
+width: 100%; /* Porcentaje o valor en píxeles */
+height: 600px; /* Valor en píxeles */
+background-color: #f0f0f0;
+background-color: white;
+margin-top: 75px; /* Hacer que el carousel se mueva hacia abajo */
+} 
+
+#carouselExampleIndicators {
+width: 100%;
+margin: auto;
+margin-top: 50px; /* Agregar margen adicional hacia abajo */
+}
+
+.carousel-inner img {
+width: 100%;
+height: 600px; /* Aumentar tamaño especifico de las imagenes */
+object-fit: cover;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+background-color: #1600a8; /* Color de boton*/
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+background-color: #1600a8; /* Color de boton*/
+}
+
+/* Estilos para las otras secciones */
+
+.about, .activities, .gallery {
+  padding: 100px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about h2, .activities h2, .gallery h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Estilos generales para el contenedor del poster */
+
+.poster {
+position: relative;
+cursor: pointer;
+overflow: hidden;
+}
+
+/* Estilos para las imágenes específicas dentro del póster */
+
+.poster img[src="img/res1.png"],
+.poster img[src="img/res2.png"],
+.poster img[src="img/res3.png"] {
+width: 100%;
+transition: transform 0.5s ease;
+}
+
+/* Estilos de superposición */
+
+.poster-overlay {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0.05;
+background: rgba(0, 0, 0, 0.7); /* Fondo oscuro con transparencia */
+color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+opacity: 0;
+transition: opacity 0.5s ease;
+font-family: 'Roboto Condensed', sans-serif; /* Fuente más llamativa */
+}
+
+/* Estilos para los textos dentro de la superposición con tamaño de letra aumentado */
+
+.poster-overlay h3 {
+margin: 0;
+font-weight: 700; /* Fuente más gruesa para el título */
+font-size: 2em; /* Tamaño de letra aumentado para el título */
+}
+
+.poster-overlay p {
+margin: 0;
+font-size: 1.5em; /* Tamaño de letra aumentado para el párrafo */
+}
+
+/* Efecto de hover para mostrar la superposición y escalar las imágenes específicas */
+
+.poster:hover img[src="img/res1.png"],
+.poster:hover img[src="img/res2.png"],
+.poster:hover img[src="img/res3.png"] {
+transform: scale(1.1);
+
+}
+
+.poster-overlay .stars {
+color: yellow; /* Cambia el color de las estrellas a amarillo */
+}
+
+.poster-overlay .stars {
+font-size: 34px; /* Para Aumentar este valor para hacer las estrellas más grandes */
+color: yellow; /* Color amarillo de las estrellas */
+}
+
+/* Efecto de hover o sombra para mostrar la superposición */
+
+.poster:hover .poster-overlay {
+opacity: 1;
+}
+
+.table-of-contents {
+position: sticky;
+top: 75px; /* Ajusta según sea necesario para la alineación vertical */
+float: right;
+width: 300px; /* O el ancho que prefieras */
+margin-left: 20px; /* Espacio entre el contenido principal y la tabla de contenidos */
+padding: 10px;
+border: 1px solid #49474792; /* Estilo opcional para la tabla de contenidos */
+background-color: #e2dadad2; /* Estilo opcional para la tabla de contenidos */
+}
+
+.table-of-contents h3 {
+text-align: center;
+font-size: 16px;
+}
+
+.table-of-contents ul {
+list-style: none;
+padding: 0;
+}
+
+.table-of-contents li a {
+text-decoration: none;
+color: #000000; /* Color de enlace estándar */
+display: block;
+padding: 5px 0; /* Espacio vertical entre enlaces */
+}
+
+/* Estilos para cuando se pasa el cursor sobre los enlaces */
+.table-of-contents li a:hover {
+background-color: #ddd;
+}
+
+.sidebar {
+position: fixed;
+top: 50%;
+left: 0;
+transform: translateY(-50%); /* Ajuste fino para centrar exactamente en vertical */
+width: 200px; /* ancho del sidebar */
+height: auto; /* Altura automática según el contenido */
+background-color: #f4f4f4;
+padding: 20px;
+box-sizing: border-box;
+overflow-y: auto; /* Permite scroll dentro del sidebar si es necesario */
+z-index: 1000; /* Asegura que el sidebar se muestre sobre otros contenidos */
+}
+
+.logo img {
+max-width: 100%;
+height: auto;
+display: block;
+margin-bottom: 20px;
+}
+
+.recomendaciones {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.recomendaciones li a {
+text-decoration: none;
+color: #333;
+display: block;
+padding: 10px;
+border-bottom: 1px solid #ccc;
+}
+
+.recomendaciones li a:hover {
+background-color: #ddd;
+}
+
+.modal-content {
+/* Asegurarse de que el contenido del modal sea completamente opaco */
+opacity: 1;
+}
+
+.form-control {
+/* Asegurarse de que los campos del formulario sean editables */
+pointer-events: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para el footer */
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: auto;
+  padding: 75px 0;
+  height: 400px; /* Altura del footer */
+  text-align: auto;
+}
+
+.footer h4 {
+  font-size: 30px; /* Tamaño de letra para los títulos */
+  text-align: left;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-col {
+  width: 25%; /* Ancho de cada columna del footer */
+  float: auto;
+  padding: 0 15px;
+}
+
+.footer-col ul li {
+  margin-bottom: 5px;
+
+}
+
+.producto {
+  margin-bottom: 30px;
+}
+
+.producto img {
+  max-width: 100%;
+}
+
+.footer-col{
+   width: 20%;
+   padding: 0 5px;
+   margin-left: 5%;
+}
+
+#beachvillasyresort img {
+border-radius: 10px;
+}
+
+#Brisamarina img{
+border-radius: 10px
+}
+
+
+#eldorado img{
+border-radius: 10px
+}
+
+
+#lasveraneras img{
+border-radius: 10px
+}
+
+
+#villagelodge img{
+border-radius: 10px
+}
+
+
+#historia img{
+border-radius: 10px
+}
