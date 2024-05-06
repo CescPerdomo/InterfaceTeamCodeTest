@@ -1,0 +1,133 @@
+
+/* Estilos para el banner */
+.banner {
+    height: 560px;
+    background-image: url('cobanos.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.banner-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.btn {
+    background-color: #2271b3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.btn:hover {
+    background-color: #589bd7;
+}
+
+/* Estilos para las otras secciones */
+.about, .activities, .gallery {
+    padding: 100px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about h2, .activities h2, .gallery h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#descu {
+    color: #292929;
+}
+
+.container h1{
+    color: #ffffff;
+  }
+
+#arre{
+    color: #000000;
+}
+
+.producto {
+    margin-bottom: 30px;
+  }
+  
+  .producto img {
+    max-width: 100%;
+  }
+  
+  .footer-col{
+     width: 20%;
+     padding: 0 5px;
+     margin-left: 5%;
+  }
+
+
+img {
+    border: 6px solid #c0d6df;
+    margin-bottom: 7px;
+    border-radius: 12px;
+}
+
+
+#cueva img {
+  border-radius: 10px;
+}
+
+#royal img{
+  border-radius: 10px
+}
+
+
+#buceo img{
+  border-radius: 10px
+}
+
+
+#ballena img{
+  border-radius: 10px
+}
+
+
+#snorkel img{
+  border-radius: 10px
+}
+
+
+#historia img{
+  border-radius: 10px
+}
