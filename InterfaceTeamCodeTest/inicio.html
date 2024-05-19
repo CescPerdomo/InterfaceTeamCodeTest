@@ -21,9 +21,10 @@
 
     <body>
         <header>
+          <section class="menu">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container">
-                    <a class="navbar-brand" href="#">Arrecife de los Cobanos</a>
+                    <a class="navbar-brand" href="Inicio.html"><img src="assets/img/logoarre.jpg" id="brand" alt="" srcset=""></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -32,19 +33,14 @@
                 <li class="nav-item">
                     <a class="nav-link" href="Inicio.html">Inicio</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Destinos
-                    </a>
-        
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#activities" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Actividades
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="navbarDropdown">Destinos</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Actividades.html">Actividades</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Carritodecompras.html">Reservas y Planificación</a>
+                    <a class="nav-link" href="Reservas_Planificacion.html">Reservas y Planificación</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="Contacto.html">Contacto</a>
@@ -56,6 +52,7 @@
                     </div>
                 </div>
             </nav>
+          </section>
         </header>
         <main>
             <!-- Banner de la página de inicio -->
@@ -69,13 +66,13 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <a href="Actividades.html"><img src="img/banner1.jpg" class="d-block w-100" alt="banner1"></a>
+                    <a href="Actividades.html"><img src="assets/img/banner1.jpg" class="d-block w-100" alt="banner1"></a>
                 </div>
                 <div class="carousel-item">
-                    <a href="Actividades.html"><img src="img/banner2.png" class="d-block w-100" alt="banner2"></a>
+                    <a href="Actividades.html"><img src="assets/img/banner2.png" class="d-block w-100" alt="banner2"></a>
                 </div>
                 <div class="carousel-item">
-                    <a href="Actividades.html"><img src="img/banner3.png" class="d-block w-100" alt="banner3"></a>
+                    <a href="Actividades.html"><img src="assets/img/banner3.png" class="d-block w-100" alt="banner3"></a>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -243,7 +240,7 @@
         <div class="row">
             <div class="col-md-4">
             <div class="poster" onclick="showPosterDetails('Image 1')">
-                <img src="img/Avis.jpg" alt="Image 1" class="img-fluid">
+                <img src="assets/img/Avis.jpg" alt="Image 1" class="img-fluid">
                 <div class="poster-overlay">
                 <h3>Detalles</h3>
                 <p>Tour en Catamaran $75 X 2 horas </p>
@@ -258,7 +255,7 @@
             </div>
             <div class="col-md-4">
             <div class="poster" onclick="showPosterDetails('Image 2')">
-                <img src="img/royal.jpg" alt="Image 2" class="img-fluid">
+                <img src="assets/img/royal.jpg" alt="Image 2" class="img-fluid">
                 <div class="poster-overlay">
                 <h3>Detalles</h3>
                 <p>Acceso Zona VIP</p>
@@ -273,7 +270,7 @@
             </div>
             <div class="col-md-4">
             <div class="poster" onclick="showPosterDetails('Image 3')">
-                <img src="img/Snorkeling.jpg" alt="Image 3" class="img-fluid">
+                <img src="assets/img/Snorkeling.jpg" alt="Image 3" class="img-fluid">
                 <div class="poster-overlay">
                 <h3>Detalles</h3>
                 <p>Snorkeling 2x1</p>
@@ -288,7 +285,7 @@
             </div>
             <div class="col-md-4">
                 <div class="poster" onclick="showPosterDetails('Image 3')">
-                    <img src="img/Restaurante.jpg" alt="Image 3" class="img-fluid">
+                    <img src="assets/img/Restaurante.jpg" alt="Image 3" class="img-fluid">
                     <div class="poster-overlay">
                     <h3>Detalles</h3>
                     <p>Todo Incluido</p>
@@ -303,7 +300,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="poster" onclick="showPosterDetails('Image 3')">
-                        <img src="img/Buceo_LosCobanos.jpg" alt="Image 3" class="img-fluid">
+                        <img src="assets/img/Buceo_LosCobanos.jpg" alt="Image 3" class="img-fluid">
                         <div class="poster-overlay">
                         <h3>Detalles</h3>
                         <p>Buceo en Acuario</p>
@@ -318,7 +315,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="poster" onclick="showPosterDetails('Image 3')">
-                            <img src="img/Arrecife_Cobanos.jpg" alt="Image 3" class="img-fluid">
+                            <img src="assets/img/Arrecife_Cobanos.jpg" alt="Image 3" class="img-fluid">
                             <div class="poster-overlay">
                             <h3>Detalles</h3>
                             <p>Vuelo en Avioneta</p>
@@ -334,12 +331,6 @@
         </div>
         </div>
     </section>
-
-    <!-- Galería de imágenes -->
-    <section class="gallery">
-        <div class="container">
-            <h2 class="text-center">Galería</h2>
-            <!-- Galería de imágenes del arrecife -->
         </div>
     </section>
         </main>
