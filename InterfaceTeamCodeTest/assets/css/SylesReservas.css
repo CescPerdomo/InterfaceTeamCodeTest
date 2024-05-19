@@ -1,0 +1,458 @@
+/* Estilos generales para la navbar */
+.navbar {
+  padding: 0.3rem 0.3rem; /* Añade relleno uniforme alrededor de la barra de navegación */
+}
+
+/* Estilos para el contenedor dentro de la navbar para asegurar un espaciado adecuado */
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: 0px; /* Move Arrecife de los Cobanos to the left */
+}
+
+#arrecife {
+  font-size: 0.1rem; /* Increase the font size of Arrecife de los Cobanos */
+  margin-left: 0px; 
+}
+
+/* Ajustes específicos para los elementos de la navbar para mejorar el espaciado */
+.nav-link {
+  margin-right: 10px; /* Añade margen a la derecha de cada enlace para separarlos */
+  font-size: 1.1rem; /* Aumenta el tamaño de las letras */
+}
+
+/* Ajustes para el botón del menú en dispositivos móviles */
+.navbar-toggler {
+  margin-right: 15px; /* Asegura que haya espacio suficiente alrededor del botón del menú */
+}
+
+/* Ajustes para el logotipo o marca de la navbar */
+.navbar-brand {
+  margin-right: 20px; /* Espacio adicional a la derecha del logotipo para separarlo de los enlaces */
+  font-size: 1.5rem; /* Aumenta el tamaño de las letras */
+}
+
+/* Estilos para el área de colapso para asegurar el alineamiento y el espaciado adecuados */
+.collapse.navbar-collapse {
+  justify-content: flex-end; /* Alinea los elementos de navegación al final del contenedor */
+}
+
+
+
+
+
+/* Estilos para el banner */
+.banner {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 0px 0; /* Increase the padding to move the banner up */
+  max-width: 1900px; /* Reduce the max-width to make the banner smaller */
+  margin: 0 auto; /* Center the banner horizontally */
+  margin-bottom: 0; /* Remove margin-bottom to eliminate the extra space */
+  margin-top: 0; /* Remove margin-top to eliminate the extra space */
+  
+}
+
+.banner-content {
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+.banner h1 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.btn {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 50px; /* Change the border-radius to make the button round */
+  font-size: 1.3rem;
+  position: absolute; /* Add position absolute */
+  top: 90%; /* Move the button to the middle vertically */
+  left: 50%; /* Move the button to the middle horizontally */
+  transform: translate(-50%, -50%); /* Center the button */
+}
+
+.btn:hover {
+  background-color: #3e00f8;
+}
+
+/* Estilos generales del carrusel */
+.carousel {
+  position: relative;
+  width: 100%; /* Asegura que el carrusel ocupe todo el ancho del contenedor */
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  list-style: none;
+  display: flex;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel-indicators li.active {
+  background-color: #007bff; /* Color azul para el indicador activo */
+}
+
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-left: 10px; /* Add margin to the left side */
+  margin-right: 10px; /* Add margin to the right side */
+  margin-bottom: 5px; /* Reduce the margin at the bottom */
+}
+
+.carousel-item {
+  position: relative;
+  display: none;
+  width: 100%;
+  height: 50rem;
+  transition: transform 0.6s ease-in-out; /* Improved transition with ease-in-out timing function */
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  
+}
+
+.carousel-control-prev, .carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: #007bff; /* Fondo azul para los botones */
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: no-repeat 50%/100% 100%;
+  
+}
+
+.carousel-control-prev-icon {
+  transform: rotate(180deg);
+}
+
+/* Estilos para la ventana emergente */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Asegura que la ventana emergente esté en la parte superior */
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.popup-close:hover {
+  color: red;
+}
+
+/* Estilos para el botón Reserva Ya */
+.btn-reserva {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1.3rem;
+}
+
+.btn-reserva:hover {
+  background-color: #3e00f8;
+}
+
+/* Estilos para el formulario */
+.form {
+  margin-top: 100px;
+  max-width: 400px;
+  margin: 40 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form textarea {
+  height: 100px;
+}
+
+/* Estilos para el botón Enviar reserva */
+.btn-enviar {
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 150%; /* Move the button to the middle vertically */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-enviar:hover {
+  background-color: #3e00f8;
+}
+
+/* Estilos base para el contenedor del póster */
+.poster {
+  position: relative;
+  margin-bottom: 40px; /* Espacio entre pósters */
+  border: 1px solid #ccc; /* Agrega un borde al contenedor del póster */
+  border-radius: 10px; /* Agrega bordes redondeados al contenedor del póster */
+  padding: 10px; /* Agrega un espacio interno al contenedor del póster */
+  background-color: white; /* Cambia el color de fondo del contenedor del póster */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /* Agrega una sombra al contenedor del póster */
+}
+
+/* Estilos para la imagen dentro del póster */
+.poster img.img-fluid {
+  width: 100%;
+  display: block;
+  border-radius: 25px; /* Agrega bordes redondeados a la imagen */
+}
+
+/* Estilos para la superposición que aparece sobre la imagen */
+.poster-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente para mejorar la lectura del texto */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 0.5s ease; /* Transición suave para mostrar/ocultar */
+}
+
+/* Estilos para el texto y los detalles dentro de la superposición */
+.poster-overlay h3,
+.poster-overlay p,
+.poster-overlay .stars {
+  margin: 5px;
+  text-align: center;
+  font-weight: bold; /* Cambia el texto a negrita */
+}
+
+.stars {
+  color: yellow;
+
+}
+
+/* Estilos para el botón dentro del póster */
+.poster button.btn {
+  position: absolute;
+  bottom: 40px; /* Cambia la posición vertical del botón */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 0.5s ease;
+  padding: 20px 40px; /* Cambia el tamaño del botón */
+  font-size: 1rem; /* Cambia el tamaño de la fuente del botón */
+  text-align: center; /* Centra el texto dentro del botón */
+  display: flex; /* Permite alinear el texto verticalmente */
+  justify-content: center; /* Centra el texto horizontalmente */
+  align-items: center; /* Centra el texto verticalmente */
+}
+
+/* Cambia la opacidad cuando el póster es hovereado */
+.poster:hover .poster-overlay,
+.poster:hover button.btn {
+  opacity: 1;
+}
+
+/* Estilos adicionales para el estado hover del botón para mejorar la interactividad */
+.poster button.btn:hover {
+  background-color: #0056b3; /* Un tono más oscuro del color primario */
+}
+
+/* Estilos para la tabla de contenidos izquierda */
+.table-of-contents {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.table-of-contents ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.table-of-contents li {
+  margin-bottom: 10px;
+}
+
+.table-of-contents a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.table-of-contents a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para las otras secciones */
+.about, .activities, .gallery {
+  padding: 100px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about h2, .activities h2, .gallery h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+.producto {
+  margin-bottom: 30px;
+}
+
+.producto img {
+  max-width: 100%;
+}
+
+.footer-col{
+   width: 20%;
+   padding: 0 5px;
+   margin-left: 5%;
+}
+
+#beachvillasyresort img {
+border-radius: 10px;
+}
+
+#Brisamarina img{
+border-radius: 10px
+}
+
+
+#eldorado img{
+border-radius: 10px
+}
+
+
+#lasveraneras img{
+border-radius: 10px
+}
+
+
+#villagelodge img{
+border-radius: 10px
+}
+
+
+#historia img{
+border-radius: 10px
+}
